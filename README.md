@@ -4,6 +4,7 @@
 
 - [Lab 1: Comparing LLMs (Groq, Gemini, OpenRouter)](lab_1/README.md)
 - [Lab 2: Structured extraction (Pydantic + instructor)](lab_2/README.md)
+- [Lab 3: Open models and MCP (Ollama + MCP server + agent)](lab_3/README.md)
 
 ## Setup
 

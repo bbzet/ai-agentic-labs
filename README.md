@@ -6,6 +6,7 @@
 - [Lab 2: Structured extraction (Pydantic + instructor)](lab_2/README.md)
 - [Lab 3: Open models and MCP (Ollama + MCP server + agent)](lab_3/README.md)
 - [Lab 4: ReAct agent from scratch (Thought → Action → Observation)](lab_4/README.md)
+- [Lab 5: HR assistant on LangGraph (routing, interrupt, fallback)](lab_5/README.md)
 
 ## Setup
 

@@ -8,3 +8,5 @@ Scripts/
 Lib/
 Include/
 pyvenv.cfg
+# lab presentations (study material, not pushed)
+lab_5/presentations/

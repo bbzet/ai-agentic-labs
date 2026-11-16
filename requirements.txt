@@ -4,3 +4,7 @@ google-genai
 python-dotenv
 matplotlib
 pandas
+chromadb
+sentence-transformers
+langchain-text-splitters
+langchain-ollama

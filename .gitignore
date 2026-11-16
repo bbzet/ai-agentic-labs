@@ -10,3 +10,6 @@ Include/
 pyvenv.cfg
 # lab presentations (study material, not pushed)
 lab_5/presentations/
+
+# lab 7 generated knowledge base (python lab_7/kb.py)
+lab_7/kb_alatech/

@@ -1,0 +1,100 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\ASUS\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\ASUS\.cache\huggingface\hub\models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+C:\Users\ASUS\AppData\Local\Programs\Python\Python311\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\ASUS\.cache\huggingface\hub. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Документов: 532 | вопросов: 10
+По типам: {'faq': 60, 'ticket': 320, 'order': 140, 'policy': 12}
+  policy  средняя длина: 4608 символов
+  ticket  средняя длина: 236 символов
+  order   средняя длина: 293 символов
+  faq     средняя длина: 156 символов
+
+Тестовые вопросы:
+  q01: Сколько дней ежегодного оплачиваемого отпуска положено сотруднику АлаТех?
+  q02: За сколько дней нужно подать заявление на отпуск и можно ли делить отпуск на части?
+  q03: Какие суточные положены при командировке в Алматы?
+  q04: Сколько дней в неделю можно работать из дома и с какого момента?
+  q05: Какие требования к паролю учётной записи?
+  q06: Куда и в какой срок сообщать об инциденте информационной безопасности?
+  q07: В какой срок нужно сдать авансовый отчёт после командировки?
+  q08: Какой годовой бюджет на обучение у одного сотрудника?
+  q09: Кто назначен ответственным по приказу №87-к?
+  q10: До какой суммы оператор может вернуть клиенту деньги в AlaPay без подтверждения менеджера?
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5164.18it/s]
+готово: chunk_size=200, overlap=30
+готово: chunk_size=500, overlap=75
+готово: chunk_size=1000, overlap=150
+готово: chunk_size=500, overlap=0
+готово: chunk_size=500, overlap=150
+
+ chunk_size  overlap  чанков  hit@1  hit@5   MRR
+        200       30    1320    0.5    0.6 0.533
+        500       75     697    0.5    0.8 0.592
+       1000      150     629    0.3    0.5 0.353
+        500        0     696    0.4    0.8 0.525
+        500      150     717    0.5    0.8 0.617
+
+Позиция правильного чанка (пусто = не найден в top-5):
+config  1000/150  200/30  500/0  500/150  500/75
+id                                              
+q01          NaN     1.0    4.0      1.0     4.0
+q02          NaN     3.0    3.0      3.0     1.0
+q03          NaN     NaN    NaN      NaN     NaN
+q04          5.0     1.0    1.0      2.0     1.0
+q05          NaN     NaN    NaN      NaN     NaN
+q06          1.0     1.0    1.0      1.0     1.0
+q07          NaN     NaN    3.0      1.0     3.0
+q08          1.0     1.0    1.0      1.0     1.0
+q09          3.0     NaN    3.0      3.0     3.0
+q10          1.0     1.0    1.0      1.0     1.0
+
+q03 (500, 75): Какие суточные положены при командировке в Алматы?
+Нужный документ: POL-FIN-001
+    1. POL-HR-002   dist=0.408  '. В дни удалённой работы работник обязан быть на связи с 10:00 до 17:00 по времени Бишкека'
+    2. POL-ADM-001  dist=0.438  '. Сроки, указанные в разделе, исчисляются со дня, следующего за днём наступления события. '
+    3. POL-ADM-002  dist=0.462  '. Сроки, указанные в разделе, исчисляются со дня, следующего за днём наступления события.'
+    4. POL-HR-004   dist=0.462  '. Сроки, указанные в разделе, исчисляются со дня, следующего за днём наступления события.'
+    5. HD-11624     dist=0.469  '# Тикет HD-11624: Вопрос по отпуску\n\nСтатус: закрыт. Приоритет: высокий. Отдел заявителя: '
+
+q09 (500, 75): Кто назначен ответственным по приказу №87-к?
+Нужный документ: ORD-087
+    1. ORD-068      dist=0.285  '# Приказ №68-к от 01.02.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
+    2. ORD-108      dist=0.322  '# Приказ №108-к от 04.06.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «А'
+  V 3. ORD-087      dist=0.324  '# Приказ №87-к от 25.09.2026 «О назначении ответственного за охрану труда»\n\nВ целях обеспе'
+    4. ORD-116      dist=0.325  '# Приказ №116-к от 18.01.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «А'
+    5. ORD-092      dist=0.326  '# Приказ №92-к от 16.01.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
+
+q03 (200, 30): Какие суточные положены при командировке в Алматы?
+Нужный документ: POL-FIN-001
+    1. ORD-103      dist=0.424  '# Приказ №103-к от 06.05.2026 «О графике отпусков»\n\nВ целях обеспечения деятельности ОсОО '
+    2. ORD-031      dist=0.429  '# Приказ №31-к от 06.01.2026 «О графике отпусков»\n\nВ целях обеспечения деятельности ОсОО «'
+    3. ORD-055      dist=0.430  '# Приказ №55-к от 17.01.2026 «О графике отпусков»\n\nВ целях обеспечения деятельности ОсОО «'
+    4. ORD-023      dist=0.430  '# Приказ №23-к от 05.01.2026 «О графике отпусков»\n\nВ целях обеспечения деятельности ОсОО «'
+    5. ORD-111      dist=0.432  '# Приказ №111-к от 21.01.2026 «О графике отпусков»\n\nВ целях обеспечения деятельности ОсОО '
+
+q09 (200, 30): Кто назначен ответственным по приказу №87-к?
+Нужный документ: ORD-087
+    1. ORD-068      dist=0.222  '# Приказ №68-к от 01.02.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
+    2. ORD-076      dist=0.234  '# Приказ №76-к от 03.07.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
+    3. ORD-116      dist=0.241  '# Приказ №116-к от 18.01.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «А'
+    4. ORD-124      dist=0.250  '# Приказ №124-к от 07.05.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «А'
+    5. ORD-028      dist=0.254  '# Приказ №28-к от 02.09.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
+
+q03 (1000, 150): Какие суточные положены при командировке в Алматы?
+Нужный документ: POL-FIN-001
+    1. HD-11624     dist=0.469  '# Тикет HD-11624: Вопрос по отпуску\n\nСтатус: закрыт. Приоритет: высокий. Отдел заявителя: '
+    2. HD-12114     dist=0.469  '# Тикет HD-12114: Вопрос по отпуску\n\nСтатус: закрыт. Приоритет: высокий. Отдел заявителя: '
+    3. HD-10854     dist=0.470  '# Тикет HD-10854: Вопрос по отпуску\n\nСтатус: закрыт. Приоритет: средний. Отдел заявителя: '
+    4. HD-10224     dist=0.470  '# Тикет HD-10224: Вопрос по отпуску\n\nСтатус: закрыт. Приоритет: высокий. Отдел заявителя: '
+    5. HD-10784     dist=0.471  '# Тикет HD-10784: Вопрос по отпуску\n\nСтатус: закрыт. Приоритет: высокий. Отдел заявителя: '
+
+q09 (1000, 150): Кто назначен ответственным по приказу №87-к?
+Нужный документ: ORD-087
+    1. ORD-068      dist=0.285  '# Приказ №68-к от 01.02.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
+    2. ORD-108      dist=0.322  '# Приказ №108-к от 04.06.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «А'
+  V 3. ORD-087      dist=0.324  '# Приказ №87-к от 25.09.2026 «О назначении ответственного за охрану труда»\n\nВ целях обеспе'
+    4. ORD-116      dist=0.325  '# Приказ №116-к от 18.01.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «А'
+    5. ORD-092      dist=0.326  '# Приказ №92-к от 16.01.2026 «О командировании»\n\nВ целях обеспечения деятельности ОсОО «Ал'
